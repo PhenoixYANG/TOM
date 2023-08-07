@@ -3,6 +3,7 @@ from src.dataset import Model_Dataset
 from src.train import model_train
 from torch.utils.data import DataLoader
 from src.utils import get_data
+import argparse
 import os
 import sys
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
@@ -24,7 +25,7 @@ def get_logdir(args):
     else:
         args['log_dir']=f'{args["model"]}_{args["dataset"]}'
     return args
-if __name__=='__main__':
+if __name__=='__main__':      
     config=model_config(
         classifier_dropout=0.1,
         hidden_size=768,
@@ -37,18 +38,13 @@ if __name__=='__main__':
         topic_num=30,
         )   
     train_args={
-        #'test' : True,
-        'test' : False,
+        'test' : True, #use checkpoint to test or not
         'dataset' : 'RU_senti',
-        #'dataset' : 'EU-senti',
-        #'dataset' : 'MVSA_M',
-        #'dataset' : 'MVSA_S',
         'data_path' : 'data',
         'num_epochs' : 60,
         'batch_size' : 128,
         'num_workers' :64,
         'lr' : 0.0005,
-        #'devices' :[2],
         'devices' :[8],
         'log_dir' :'MulSentiViltMVSA',
         'model' :'Vilt',
