@@ -30,7 +30,7 @@ You can run our code with:
 
 `python main.py`
 
-If you wants to use our trained checkpoint, it can be downloaded from [here]() and placed to `modelcheckpoint` dir.
+If you wants to use our trained checkpoint, it can be downloaded from [here](https://drive.google.com/drive/folders/10Joh7Ee-0z4wAB4fIbTzbLwb45Y9YNwI?usp=drive_link) and placed to `modelcheckpoint` dir.
 
 To replicate expierment result on RU-Senti dataset, you should modify `model_config.use_topic=True`, `train_args['test']=True` and `train_args['dataset']=RU_senti` in the main.py file. 
 
