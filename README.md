@@ -11,7 +11,7 @@ To install the necessary packages, use conda and the provided environment,yaml f
 
 Our proposed RU-Senti dataset can be download from [here](https://drive.google.com/file/d/1ED1SHlYRVhduDi14-f2Xp0Mk35PdjQJU/view?usp=drive_link).
 
-For a detailed introduction to our proposed RU-senti dataset, please refer to 'dataset/README.md'.
+For a detailed introduction to our proposed RU-senti dataset, please refer to `dataset/README.md`.
 ## Running
 You can run our code with:
 
