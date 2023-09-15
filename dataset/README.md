@@ -6,7 +6,9 @@
 ## Dataset Introduction
 
 **RU-Senti** is a multimodal sentiment analysis dataset which contains 113,588 image-text pairs collected from twitter and all the data samples are related to the Russia-Ukraine conflict and contain timestamps. RU-Senti dataset covers the period from March 2022 to December 2022, i.e., 10 months in total, and each month contains about 10,000 image-text pairs except for April and October which contains 18,675 and 14,506 image-text pairs, respectively.
+
 ![RU-senti_time](/pics/RU-Senti_date_statistic.png)
+
 ![RU-senti_distribution](/pics/RU-Senti_distribution.png)
 
 
