@@ -41,7 +41,7 @@ def eval_3_senti_RU(results, truths, exclude_zero=False):
 
     corr = np.corrcoef(test_preds, test_truth)[0][1]
     mult_a3,a_neg,a_neu,a_pos = multiclass_acc3(test_preds, test_truth)
-    f_score = f1_score(np.round(test_preds), np.round(test_truth), average='micro')
+    f_score = f1_score(np.round(test_preds), np.round(test_truth), average='macro')
     binary_truth = (test_truth[non_neu] > 0)
     binary_preds = (test_preds[non_neu] > 0)
     print("acc_3: ", mult_a3)
